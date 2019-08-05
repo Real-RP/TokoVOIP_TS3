@@ -155,7 +155,7 @@ function TokoVoip.initialize(self)
 					end
 					lastTalkState = true
 				end
-			else
+			elseif (IsControlPressed(0, 21) then
 				self.plugin_data.radioTalking = false;
 				if (getPlayerData(self.serverId, "radio:talking")) then
 					setPlayerData(self.serverId, "radio:talking", false, true);
